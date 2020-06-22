@@ -1,0 +1,32 @@
+<div class="form">
+  <div class="row">
+    <label class="label" for="nombre">Nombre</label>
+    <input
+      [ngModel]="appointment.name"
+      (ngModelChange)="capt($event, 'name')"
+      class="input"
+      type="text"
+      id="nombre"
+    />
+  </div>
+  <div class="row">
+    <label class="label" for="dueño">Dueño</label>
+    <input
+      [ngModel]="appointment.owner"
+      (ngModelChange)="capt($event, 'owner')"
+      class="input"
+      type="text"
+      id="dueño"
+    />
+  </div>
+  <div class="row">
+    <label class="label" for="sintomas">Sintomas</label>
+    <textarea
+      [ngModel]="appointment.symptoms"
+      (ngModelChange)="capt($event, 'symptoms')"
+      class="input"
+      id="sintomas"
+    ></textarea>
+  </div>
+  <button (click)="envCita()" class="button">Añadir</button>
+</div>

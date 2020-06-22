@@ -1,0 +1,18 @@
+<div class="container-appointment">
+  <div class="wrapper-card" *ngFor="let appointment of appointments">
+    <div class="card">
+      <p class="container-appointment__item">
+        <span class="label">Nombre:</span> {{ appointment.name }}
+      </p>
+      <hr />
+      <p class="container-appointment__item">
+        <span class="label">Dueño:</span> {{ appointment.owner }}
+      </p>
+      <hr />
+      <p class="container-appointment__item">
+        <span class="label">Sintomas:</span> {{ appointment.symptoms }}
+      </p>
+      <button class="button" (click)="deleteItem(appointment.id)">X</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.border {
+
+}
+
+.container-app {
+	background-color: #FF5733;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.form {
+	padding: 2rem 4rem;
+}

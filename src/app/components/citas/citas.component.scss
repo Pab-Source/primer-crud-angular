@@ -1,0 +1,29 @@
+.container-appointment {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper-card {
+  padding: 0 1rem 1rem 1rem;
+}
+.card {
+  border-radius: 10px;
+  width: 12rem;
+  background-color: white;
+  padding: 1rem;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  background-color: red;
+  padding: 0.2rem;
+}
+
+.label {
+  font-weight: bold;
+}
